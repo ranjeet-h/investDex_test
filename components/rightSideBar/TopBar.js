@@ -2,177 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Menu, Dropdown, Button } from "antd";
 import axios from "axios";
 
-const whatsNew = (
-  <Menu theme="dark" className="rounded-2xl">
-    <Menu.Item>
-      <div target="_blank" className="relative w-[352px] h-[135px]">
-        <div className="flex items-center mt-4 ml-2">
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 14 15"
-            fill="none"
-            focusable="false"
-            className="chakra-icon css-1ead6s2"
-          >
-            <path
-              d="M1.06165 5.93618H12.9443"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M9.96147 8.53982H9.96765"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M7.00292 8.53982H7.00909"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M4.03868 8.53982H4.04486"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M9.96147 11.1308H9.96765"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M7.00292 11.1308H7.00909"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M4.03868 11.1308H4.04486"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M9.69595 1V3.19385"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M4.31027 1V3.19385"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M9.82551 2.05286H4.18064C2.22285 2.05286 1 3.14348 1 5.14821V11.1813C1 13.2176 2.22285 14.3334 4.18064 14.3334H9.81933C11.7833 14.3334 13 13.2365 13 11.2317V5.14821C13.0062 3.14348 11.7895 2.05286 9.82551 2.05286Z"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-          </svg>
-          <p className="text-xl font-bold ml-3 text-[#40dab4]">
-            Workstation goes live today!!!!
-          </p>
-        </div>
-
-        <p className="ml-9 text-white font-semibold ">
-          Please to announce that the Workstation <br /> goes live!!!
-        </p>
-        <p className="absolute bottom-0 right-0 flex text-white items-center ">
-          13 Days ago{" "}
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 14 15"
-            fill="none"
-            focusable="false"
-            className="chakra-icon css-1ead6s2 ml-2"
-          >
-            <path
-              d="M1.06165 5.93618H12.9443"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M9.96147 8.53982H9.96765"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M7.00292 8.53982H7.00909"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M4.03868 8.53982H4.04486"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M9.96147 11.1308H9.96765"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M7.00292 11.1308H7.00909"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M4.03868 11.1308H4.04486"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M9.69595 1V3.19385"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              d="M4.31027 1V3.19385"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M9.82551 2.05286H4.18064C2.22285 2.05286 1 3.14348 1 5.14821V11.1813C1 13.2176 2.22285 14.3334 4.18064 14.3334H9.81933C11.7833 14.3334 13 13.2365 13 11.2317V5.14821C13.0062 3.14348 11.7895 2.05286 9.82551 2.05286Z"
-              stroke="#9094A1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-          </svg>
-        </p>
-      </div>
-    </Menu.Item>
-  </Menu>
-);
-
-const gweiMenu = (
-  <Menu theme="dark" className="rounded-2xl">
-    <Menu.Item>
-      <div target="_blank" className="relative w-[352px] h-[135px]"></div>
-    </Menu.Item>
-  </Menu>
-);
-
 const TopBar = ({
   uniSwap,
   setUniSwap,
@@ -201,7 +30,6 @@ const TopBar = ({
     getEthPrice();
   }, []);
   // console.log("Eth Price Api", Number.parseFloat(ethPrice).toPrecision(6));
-
   let max,
     min,
     avg = 0;
@@ -215,6 +43,233 @@ const TopBar = ({
     avg = Math.round(sum / no.length || 0);
   }
   //   console.log(min, max, avg);
+
+
+  const whatsNew = (
+    <Menu theme="dark" className="rounded-2xl">
+      <Menu.Item>
+        <div target="_blank" className="relative w-[352px] h-[135px]">
+          <div className="flex items-center mt-4 ml-2">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 14 15"
+              fill="none"
+              focusable="false"
+              className="chakra-icon css-1ead6s2"
+            >
+              <path
+                d="M1.06165 5.93618H12.9443"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M9.96147 8.53982H9.96765"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M7.00292 8.53982H7.00909"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M4.03868 8.53982H4.04486"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M9.96147 11.1308H9.96765"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M7.00292 11.1308H7.00909"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M4.03868 11.1308H4.04486"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M9.69595 1V3.19385"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M4.31027 1V3.19385"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M9.82551 2.05286H4.18064C2.22285 2.05286 1 3.14348 1 5.14821V11.1813C1 13.2176 2.22285 14.3334 4.18064 14.3334H9.81933C11.7833 14.3334 13 13.2365 13 11.2317V5.14821C13.0062 3.14348 11.7895 2.05286 9.82551 2.05286Z"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+            </svg>
+            <p className="text-xl font-bold ml-3 text-[#40dab4]">
+              Workstation goes live today!!!!
+            </p>
+          </div>
+
+          <p className="ml-9 text-white font-semibold ">
+            Please to announce that the Workstation <br /> goes live!!!
+          </p>
+          <p className="absolute bottom-0 right-0 flex text-white items-center ">
+            13 Days ago{" "}
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 15"
+              fill="none"
+              focusable="false"
+              className="chakra-icon css-1ead6s2 ml-2"
+            >
+              <path
+                d="M1.06165 5.93618H12.9443"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M9.96147 8.53982H9.96765"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M7.00292 8.53982H7.00909"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M4.03868 8.53982H4.04486"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M9.96147 11.1308H9.96765"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M7.00292 11.1308H7.00909"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M4.03868 11.1308H4.04486"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M9.69595 1V3.19385"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M4.31027 1V3.19385"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M9.82551 2.05286H4.18064C2.22285 2.05286 1 3.14348 1 5.14821V11.1813C1 13.2176 2.22285 14.3334 4.18064 14.3334H9.81933C11.7833 14.3334 13 13.2365 13 11.2317V5.14821C13.0062 3.14348 11.7895 2.05286 9.82551 2.05286Z"
+                stroke="#9094A1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+            </svg>
+          </p>
+        </div>
+      </Menu.Item>
+    </Menu>
+  );
+
+  const gweiMenu = (
+    <Menu theme="dark" className="rounded-2xl">
+      <Menu.Item>
+        <div target="_blank" className="relative w-[352px] h-[333px]">
+          <div className="m-4">
+            <div className="grid grid-cols-3 gap-2">
+              <div className="flex flex-col place-items-center bg-gradient-to-b from-[#2a5454] rounded-xl ">
+                <div className="h-[100px] mt-3">
+                  <p className="text-white text-2xl font-bold">{min }</p>
+                  <p className="">Low</p>
+                </div>
+              </div>
+              <div className="flex flex-col place-items-center bg-gradient-to-b from-[#523b34] rounded-xl ">
+                <div className="h-[100px] mt-3">
+                  <p className="text-white text-2xl font-bold">{avg}</p>
+                  <p className="">Low</p>
+                </div>
+              </div>{" "}
+              <div className="flex flex-col place-items-center bg-gradient-to-b from-[#2f2951] rounded-xl ">
+                <div className="h-[100px] mt-3">
+                  <p className="text-white text-2xl font-bold">{max}</p>
+                  <p className="">Low</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-[#405cf9] -mt-5 p-2 rounded-md text-center font-bold text-lg">
+              Set Alarm
+            </div>
+            <div className="text-[#2ae8b9] text-center text-lg font-semibold mt-3">
+              Settings
+            </div>
+            <div className="rounded-md border-[1px] p-2 flex items-center border-gray-200 border-opacity-40 ">
+              <p className="text-base ml-1">Alert threshold:</p>
+              <p className="text-gray-700 text-base ml-1">15</p>
+              <p className=" text-lg font-semibold text-gray-600 ml-8">GWEI</p>
+              <p className="text-lg font-semibold text-[#2ae8b9] ml-6">SAVE</p>
+            </div>
+            <div className="rounded-md border-[1px] p-2 mt-3 flex items-center border-gray-200 border-opacity-40 ">
+              <p className="text-base ml-1">Select Mode:</p>
+              <p className=" text-lg font-semibold text-white text-opacity-75 ml-8">
+                Greater Than
+              </p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 ml-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </Menu.Item>
+    </Menu>
+  );
 
   return (
     <div className="mt-2 mr-2 flex justify-end">
